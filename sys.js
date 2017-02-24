@@ -7634,7 +7634,6 @@ global.URLPolyfill = URLPolyfill;
           newStack.push(stack[i]);
       }
     }
-
     var newMsg = '(SystemJS) ' + (newStack ? newStack.join('\n\t') : err.message.substr(11)) + '\n\t' + msg;
 
     // Convert file:/// URLs to paths in Node
