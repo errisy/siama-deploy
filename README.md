@@ -1,13 +1,12 @@
 # SIAMA Full Stack Test
 
 ## Front End Tech
-Angular 2, SystemJS
+Angular 2, SystemJS, errisy-task/errisy-tsc (for cancelling UI tasks)
 
 ## Server Tech
-
-errisy-server (A full stack Remote Procedure Call server)
+errisy-server (A full stack Remote Procedure Call server for REST APIs)
 REST APIs (Written in app/app.rpc.ts)
-errisy-server loads the app.rpc.js at runtime and execute the APIs defined in it.
+errisy-server loads the app.rpc.js at runtime and execute the APIs defined in it. app.client.ts is automatically generated for client side async/await style API calls. Error message can be sent from server to client when exception is wrapped with RPCError class.
 
 ## Folders
 **siama/ng2/** is the source file for the whole project.
@@ -32,7 +31,7 @@ To avoid styles of one component affects another, :host selector styles with Vie
 Front End UI components are designed as independent components, which can be included in any project without adding/changing dependencies.
 
 ## Mobile Features
-**Compatible in mobile browsers** @media query is applied to handling screen sizes with mobile first. The header and input fields layouts will response to browser width changes.
+**Compatible in mobile browsers** @media query is applied to handle screen sizes with mobile first. The header and input fields layouts will response to browser width changes.
 **mobile app supports** manifest.json and apple app supports are enabled in the index.html.
 
 ## How to run e2e test.
